@@ -16,8 +16,8 @@ services:
       - DB_HOST=nctutorials.ccakimcvf2r2.us-east-2.rds.amazonaws.com
       - DB_PORT=5432
       - DATABASE=postgres
-      - VIRTUAL_HOST=YOUR_EC2_INSTANCE_DNS_HERE
-      - VIRTUAL_PORT=8000
+      - VIRTUAL_HOST=ec2-18-225-30-118.us-east-2.compute.amazonaws.com
+      - VIRTUAL_PORT=5432
   nginx:
     build: ./nginx
     image: 622369618467.dkr.ecr.us-east-2.amazonaws.com/workshop2:workshop2_nginx
